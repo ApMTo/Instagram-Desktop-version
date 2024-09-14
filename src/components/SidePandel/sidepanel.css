@@ -1,0 +1,70 @@
+.sidepanel_page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+}
+
+.sidepanel {
+  max-width: 200px;
+  width: 200px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  border-right: 1px solid rgb(72, 68, 68);
+}
+
+.sidepanel img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidepanel .brand {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidepanel nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 80px;
+}
+
+.sidepanel a,
+.sidepanel button {
+  box-sizing: border-box;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: 0.2s;
+}
+
+.sidepanel a.active {
+  font-weight: bold;
+}
+
+.sidepanel a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidepanel .menu {
+  background-color: transparent;
+  border: none;
+}
+

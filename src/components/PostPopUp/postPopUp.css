@@ -1,0 +1,251 @@
+.post_pop_up {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.post_pop_up_body {
+  width: 80%;
+  height: 90%;
+  background-color: #000000;
+  border-radius: 12px;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  justify-content: space-between;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.post_pop_up_post {
+  width: 50%;
+  height: 100%;
+  background-color: #000;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.post_pop_up_post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px 0 0 12px;
+}
+
+.post_pop_up_comments {
+  width: 50%;
+  height: 100%;
+  background-color: #000000;
+  padding: 20px;
+  overflow-y: auto;
+  border-radius: 0 12px 12px 0;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post_card_user {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.post_card_user_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.pop_up_user_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post_card_comments_info {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 20px;
+  z-index: 999;
+}
+
+.post_card_comments_info::-webkit-scrollbar {
+  display: none;
+}
+
+.all_comments {
+  flex-grow: 1;
+}
+
+.post_card_pinned_comment {
+  margin-bottom: 20px;
+}
+
+.comment {
+  margin-bottom: 10px;
+}
+
+.post_message {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+
+.post_message_info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.post_message_info span {
+  font-size: 10px;
+  color: #9b9b9b;
+}
+
+.post_message_info span:last-child {
+  cursor: pointer;
+}
+
+.main_comment {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #333;
+}
+
+.like_post svg {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.post_card_info_main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.post_message_footer {
+  padding: 10px 20px;
+  border-top: 1px solid #333;
+  background-color: #000;
+  z-index: 100;
+  position: sticky;
+  bottom: 0;
+}
+
+.post_message_icons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main_icons {
+  display: flex;
+  gap: 15px;
+  fill: white;
+  color: white;
+}
+
+.save_icon {
+  cursor: pointer;
+  color: white;
+}
+
+
+.post_footer_info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: left;
+  margin-top: 10px;
+
+  h4 {
+    font-size: 14px;
+  }
+
+  span {
+    color: #9b9b9b;
+    font-size: 12px;
+  }
+}
+
+.send_comment {
+  border-top: 1px solid #333;
+
+}
+
+.post_footer_comment {
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  textarea {
+    resize: none;
+    width: 90%;
+    height: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    min-height: 10px;
+    overflow: none  ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+      color: white;
+      font-weight: 600;
+    &::placeholder {
+      color: #626262;
+      font-weight: 600;
+    }
+    
+  }
+}
+
+ .post_footer_comment span {
+  color: #0095F6;
+  font-family: 600;
+  font-size: 15px;
+  cursor: pointer;
+
+  &:hover {
+      color: white;
+  }
+}
+
+.goBack {
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  z-index: 999;
+  color: white;
+  cursor: pointer;
+}
+

@@ -1,0 +1,216 @@
+.userpage {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user_info {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.user_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.user_profile_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user_account {
+    width: 30%;
+    height: 75%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.username {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.username_editprofil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.username_editprofile_btn,
+.username_unfollow_btn,
+.username_follow_btn {
+    height: 30px;
+  
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(54,54,54);
+    padding: 20px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.username_follow_btn {
+    background-color: rgb(0, 149, 246);
+}
+
+.svgsettings {
+    color: white;
+    cursor: pointer;
+}
+
+.followers {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 25px;
+    gap: 25px;
+}
+
+.followers_span {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.spn_for_account {
+    padding-left: 28px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.user__post {
+    width: 90%;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navLink_post {
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
+    color: #a5a5a5;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.active {
+    border-top: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+
+.boxOppen {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.411);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.settings {
+    width: 350px;
+    border-radius: 18px;
+    height: 140px;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.v2 {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.settings_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.v3 {
+    border: none;
+}
+
+.username_settings {
+    background: none;
+    border: none;
+}
+
+.all_user_posts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.post_item {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.post_media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post_hover_info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    gap: 15px; 
+}
+
+.all_user_posts div:hover .post_hover_info {
+    opacity: 1;
+}
+
+
+.account_bio {
+    font-size: 14px;
+}

@@ -1,0 +1,101 @@
+.login{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    padding: 15px 0px;
+    .error{
+        color: red;
+    }
+}
+.login_name{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.login_box{
+    width: 320px;
+    border: 1px solid rgb(184, 184, 184);
+    padding-top: 40px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.login_form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.login_form-input{
+    width: 90%;
+    height: 40px;
+    padding-left: 5px;
+    background-color: #FAFAFA;
+    border: 1px solid #d6d5d5;
+    border-radius: 4px;
+    outline-color: #d8d8d8;
+    margin-bottom: 15px;
+    &::placeholder{
+        font-size: 12px;
+        color: #a8a8a8;
+    }
+}
+.login_btn{
+    width: 90%;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0095F6;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.login_titel{
+    color:#103c5a;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.registration_Inputs-dash{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+
+}
+.dash{
+    width: 40%;
+    border: 0.5px solid #d8d8d8;
+}
+.dash_text{
+    font-size: 15px;
+    font-weight: 600;
+    color: #737373;
+}
+
+
+
+.reg_button{
+    width: 320px;
+    height: 70px;
+    border: 1px solid rgb(184, 184, 184);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.reg_buton-span{
+    color: rgba(255, 255, 255, 0.729);
+}
+.singup-btn a{
+    color: #0095F6;
+    text-decoration: none;
+}
